@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ProductCard_201941626_kuldeep
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: KSINGHCH
+Implementation-Vendor-Id: com.capg
+Build-Jdk: 1.8.0_121
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ProductCard_201941626_kuldeep
+Created-By: Maven Integration for Eclipse
+
