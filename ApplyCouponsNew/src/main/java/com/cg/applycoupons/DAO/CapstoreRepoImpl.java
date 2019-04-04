@@ -1,6 +1,7 @@
 package com.cg.applycoupons.DAO;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -53,9 +54,14 @@ public class CapstoreRepoImpl implements   ICapstoreRepo {
 		Coupon c1= new Coupon();
 		String cou= c1.getCouponCode();
 		Date enddate=c1.getExpiryDate();
+		LocalDate today=
 		Orders o1= new Orders();
-		
 		double subo1=o1.getSubTotal();
+		
+       
+	
+		     if(today.compareTo(enddate) <0){// not expired
+                 return false;
 		if(c1.isApplied()==false) {
 			return subo1;
 			
